@@ -5,8 +5,12 @@ import { useEffect } from 'react'
 function App() {
   const [data, setData] = useState(0)
 
+  // useEffect(() => {
+  //   fetch('/next/jokes').then(res => res.json()).then(res => setData(res))
+  // },[])
+  // console.log(data)
   useEffect(() => {
-    fetch('/next/jokes').then(res => res.json()).then(res => setData(res))
+    fetch('http://localhost:3100/next/jokes').then(res => res.json()).then(res => setData(res))
   },[])
   console.log(data)
   

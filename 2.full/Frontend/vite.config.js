@@ -11,9 +11,9 @@ export default defineConfig({
   //     }
   //   }
   // }
-  server : {
-    proxy : {
-      '/next' : 'http://localhost:3100'
-    }
-  }
+  // server : {
+  //   proxy : {
+  //     '/next' : 'http://localhost:3100'
+  //   }
+  // }
 })
